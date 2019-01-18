@@ -1,0 +1,6 @@
+<button nz-button [nzType]="'primary'" (click)="showModal()"><span>打开弹出窗口</span></button>
+<nz-modal [(nzVisible)]="isVisible" nzTitle="这是一个弹出框" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+  <p>内容一</p>
+  <p>内容 二</p>
+  <p>内容 三</p>
+</nz-modal>
